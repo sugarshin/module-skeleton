@@ -1,0 +1,25 @@
+{
+  "name": "module-skeleton",
+  "main": "module-skeleton.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sugarshin/module-skeleton",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "authors": [
+    "sugarshin"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "power-assert": ""
+  }
+}
