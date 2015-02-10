@@ -1,13 +1,12 @@
-do (root = this, factory = ->
+do (root = this, factory = (dep) ->
   "use strict"
 
   class ModuleName
 
-  return
 ) ->
   if typeof define is 'function' and define.amd
     define ['dependence'], factory
-  else if typeof module isnt 'undefined' and module.exports
+  else if typeof exports is 'object'
     module.exports = factory require 'dependence'
   else
     root.ModuleName or= factory root.Dependence

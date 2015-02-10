@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "module-skeleton",
   "repository": "git@github.com:sugarshin/module-skeleton.git",
-  "main": "module-skeleton.js",
+  "main": "./module-skeleton.js",
   "scripts": {
     "start": "node ./node_modules/.bin/coffee -cbw module-skeleton.coffee",
-    "pretest": "node ./node_modules/.bin/browserify -t coffeeify --extension=\".coffee\" test/test.coffee -o test/test.js",
+    "pretest": "node ./node_modules/.bin/browserify -t coffeeify test/test.coffee -o test/test.js",
     "test": "node ./node_modules/.bin/phantomjs ./node_modules/mocha-phantomjs/lib/mocha-phantomjs.coffee test/index.html"
   },
   "engines": {
