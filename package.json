@@ -6,7 +6,7 @@
   "main": "module-skeleton.js",
   "scripts": {
     "start": "node ./node_modules/.bin/coffee -cbw module-skeleton.coffee",
-    "pretest": "node ./node_modules/.bin/coffee -cb test/test.coffee",
+    "pretest": "node ./node_modules/.bin/browserify -t coffeeify --extension=\".coffee\" test/test.coffee -o test/test.js",
     "test": "node ./node_modules/.bin/phantomjs ./node_modules/mocha-phantomjs/lib/mocha-phantomjs.coffee test/index.html"
   },
   "engines": {
@@ -15,9 +15,12 @@
   "author": "sugarshin",
   "license": "MIT",
   "devDependencies": {
+    "browserify": "",
     "coffee-script": "",
+    "coffeeify": "",
     "mocha": "",
     "mocha-phantomjs": "",
-    "phantomjs": ""
+    "phantomjs": "",
+    "power-assert": ""
   }
 }

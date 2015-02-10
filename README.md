@@ -15,9 +15,9 @@ npm i -S sugarshin/module-name
 ## Usage
 
 ```coffeescript
-Foo = require 'module-name'
+ModuleName = require 'module-name'
 
-new Foo
+new ModuleName
 ```
 
 ## Contributing
