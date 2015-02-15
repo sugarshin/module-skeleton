@@ -20,6 +20,16 @@ ModuleName = require 'module-name'
 new ModuleName
 ```
 
+or
+
+```html
+<script src="dep.js"></script>
+<script src="module-name.js"></script>
+<script>
+  new ModuleName;
+</script>
+```
+
 ## Contributing
 
 [CoffeeScript](//coffeescript.org/)
