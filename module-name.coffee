@@ -6,7 +6,7 @@ do (root = this, factory = (dep) ->
 ) ->
   if typeof define is 'function' and define.amd
     define ['dependence'], factory
-  else if typeof exports is 'object'
+  else if typeof module is 'object' and typeof module.exports is 'object'
     module.exports = factory require 'dependence'
   else
     root.ModuleName or= factory root.Dependence

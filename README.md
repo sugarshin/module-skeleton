@@ -1,5 +1,7 @@
 # module-skeleton
 
+[![Build Status](https://travis-ci.org/sugarshin/module-skeleton.svg?branch=master)](https://travis-ci.org/sugarshin/module-skeleton) [![GitHub version](https://badge.fury.io/gh/sugarshin%2Fmodule-skeleton.svg)](http://badge.fury.io/gh/sugarshin%2Fmodule-skeleton) [![License](http://img.shields.io/:license-mit-blue.svg)](http://sugarshin.mit-license.org/)
+
 Module skeleton
 
 ---
@@ -44,6 +46,6 @@ npm test
 
 ## License
 
-MIT
+[MIT](http://sugarshin.mit-license.org/)
 
 © sugarshin
