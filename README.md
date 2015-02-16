@@ -18,7 +18,7 @@ Module skeleton
 [![Build Status](https://travis-ci.org/sugarshin/module-skeleton.svg?branch=master)](https://travis-ci.org/sugarshin/module-skeleton) [![GitHub version](https://badge.fury.io/gh/sugarshin%2Fmodule-skeleton.svg)](http://badge.fury.io/gh/sugarshin%2Fmodule-skeleton) [![License](http://img.shields.io/:license-mit-blue.svg)](http://sugarshin.mit-license.org/)
 
 ```shell
-npm i -S sugarshin/module-name
+npm i sugarshin/module-name
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ new ModuleName
 or
 
 ```html
-<script src="dep.js"></script>
+<script src="dependencies.js"></script>
 <script src="module-name.js"></script>
 <script>
   new ModuleName;
