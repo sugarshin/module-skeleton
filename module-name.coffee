@@ -1,3 +1,9 @@
+###!
+ * @license module-name
+ * (c) sugarshin
+ * License: MIT
+###
+
 do (root = this, factory = (dependencies) ->
   "use strict"
 
