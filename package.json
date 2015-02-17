@@ -8,7 +8,7 @@
     "start": "coffee -cbw module-skeleton.coffee",
     "pretest": "browserify -t coffeeify test/test.coffee -o test/test.js",
     "test": "mocha-phantomjs -p node_modules/.bin/phantomjs test/index.html",
-    "build": "uglifyjs module-skeleton.js -cm --comments '/\/*!/' -o module-skeleton.min.js"
+    "build": "uglifyjs module-skeleton.js -cm --comments '/\\/*!/' -o module-skeleton.min.js"
   },
   "engines": {
     "node": "0.10.x"
