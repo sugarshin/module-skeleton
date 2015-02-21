@@ -4,8 +4,9 @@
  * License: MIT
 ###
 
+"use strict"
+
 do (root = this, factory = (dependencies) ->
-  "use strict"
 
   class ModuleName
 
