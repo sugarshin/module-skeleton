@@ -45,6 +45,13 @@ or
 </script>
 ```
 
+### Config
+
+```coffeescript
+_defaults:
+  prop: 'val'
+```
+
 ## Contributing
 
 [CoffeeScript](//coffeescript.org/)
