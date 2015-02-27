@@ -9,8 +9,7 @@
 initialize
 
 ```
-node ./.bin/init
-rm -rf .bin .git
+sh .bin/init.sh
 ```
 
 ---
