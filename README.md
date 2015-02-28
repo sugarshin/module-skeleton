@@ -9,7 +9,7 @@
 initialize
 
 ```
-sh .bin/init.sh
+sh .bin/init.sh module-name
 ```
 
 ---
