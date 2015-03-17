@@ -4,25 +4,21 @@
   "description": "module-skeleton",
   "repository": "git@github.com:sugarshin/module-skeleton.git",
   "main": "module-skeleton.js",
+  "files": [
+    "test",
+    "module-skeleton.js",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
-    "start": "coffee -cbw module-skeleton.coffee",
-    "pretest": "browserify -t coffeeify test/test.coffee -o test/test.js",
-    "test": "mocha-phantomjs -p node_modules/.bin/phantomjs test/index.html",
-    "build": "uglifyjs module-skeleton.js -cm --comments '/\\/*!/' -o module-skeleton.min.js"
+    "start": "coffee -cw module-skeleton.coffee",
+    "test": "mochify -R spec --transform coffeeify --transform espowerify ./test/test.coffee",
+    "build": "coffee -c module-skeleton.coffee && uglifyjs module-skeleton.js -cm --comments '/\\/*!/' -o module-skeleton.min.js",
+    "prepublish": "npm run build"
   },
   "engines": {
     "node": "0.10.x"
   },
   "author": "sugarshin",
-  "license": "MIT",
-  "devDependencies": {
-    "browserify": "",
-    "coffee-script": "",
-    "coffeeify": "",
-    "mocha": "",
-    "mocha-phantomjs": "",
-    "phantomjs": "",
-    "power-assert": "",
-    "uglify-js": ""
-  }
+  "license": "MIT"
 }

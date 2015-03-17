@@ -46,6 +46,8 @@ or
 
 ### Config
 
+options
+
 ```coffeescript
 _defaults:
   prop: 'val'
@@ -55,7 +57,9 @@ _defaults:
 
 [CoffeeScript](//coffeescript.org/)
 
-[mocha-phantomjs](//github.com/metaskills/mocha-phantomjs)
+[Browserify](//browserify.org/)
+
+[Mocha](//mochajs.org/)
 
 [power-assert](//github.com/twada/power-assert)
 
