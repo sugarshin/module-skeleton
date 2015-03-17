@@ -8,7 +8,9 @@
 
 initialize
 
-```
+```shell
+mkdir module-name && cd $_
+git clone --depth 1 git@github.com:sugarshin/module-skeleton.git .
 sh .bin/init.sh module-name
 ```
 
