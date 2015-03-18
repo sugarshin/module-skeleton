@@ -22,4 +22,4 @@ fs.readFile(pkgJSON, {encoding: 'utf-8'}, function(err, data) {
   }
 });
 
-fs.rename('./module-name.coffee', './' + args[2] + '.coffee');
+fs.rename('./src/module-name.coffee', './src/' + args[2] + '.coffee');

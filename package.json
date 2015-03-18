@@ -3,18 +3,21 @@
   "version": "0.0.1",
   "description": "module-skeleton",
   "repository": "git@github.com:sugarshin/module-skeleton.git",
-  "main": "module-skeleton.js",
+  "main": "index.js",
   "files": [
+    "lib",
+    "index.js",
     "test",
-    "module-skeleton.js",
     "package.json",
     "README.md"
   ],
   "scripts": {
-    "start": "coffee -cw module-skeleton.coffee",
+    "start": "coffee -cw -o lib/ src/",
     "test": "mochify -R spec --transform coffeeify --transform espowerify ./test/test.coffee",
-    "build": "coffee -c module-skeleton.coffee && uglifyjs module-skeleton.js -cm --comments '/\\/*!/' -o module-skeleton.min.js",
-    "prepublish": "npm run build"
+    "compile": "coffee -c -o lib/ src/",
+    "build-standalone": "browserify src/module-skeleton.coffee -t coffeeify -s ModuleSkeleton | derequire > build/module-skeleton.js",
+    "build-min": "uglifyjs build/module-skeleton.js -m -c warnings=false --comments '/\\/*!/' -o build/module-skeleton.min.js",
+    "build": "npm run compile && npm run build-standalone && npm run build-min"
   },
   "engines": {
     "node": "0.10.x"

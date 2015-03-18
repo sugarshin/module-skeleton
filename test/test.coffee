@@ -1,6 +1,7 @@
 assert = require 'power-assert'
+deps = require 'deps'
 
-ModuleName = require '../module-name'
+ModuleName = require '../src/module-name.coffee'
 
 # .test()
 describe '.test()', ->

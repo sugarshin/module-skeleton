@@ -25,7 +25,7 @@ sh .bin/init.sh module-name
 Module skeleton
 
 ```shell
-npm i sugarshin/module-name
+npm i module-name
 ```
 
 ## Usage
@@ -33,27 +33,33 @@ npm i sugarshin/module-name
 ```coffeescript
 ModuleName = require 'module-name'
 
-new ModuleName
+new ModuleName opts
 ```
 
 or
 
 ```html
-<script src="dependencies.js"></script>
 <script src="module-name.js"></script>
 <script>
-  new ModuleName;
+  new ModuleName(opts);
 </script>
 ```
 
-### Config
+## Config
 
-options
+default options
 
-```coffeescript
-_defaults:
+```javascript
+var options = {
   prop: 'val'
+};
 ```
+
+## api
+
+### `m.method()`
+
+Method
 
 ## Contributing
 
