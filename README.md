@@ -63,13 +63,13 @@ Method
 
 ## Contributing
 
-[CoffeeScript](//coffeescript.org/)
+deps
 
-[Browserify](//browserify.org/)
+* package name
 
-[Mocha](//mochajs.org/)
+dev deps
 
-[power-assert](//github.com/twada/power-assert)
+* package name
 
 ```shell
 npm test
