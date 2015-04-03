@@ -2,7 +2,10 @@
   "name": "module-skeleton",
   "version": "0.0.1",
   "description": "module-skeleton",
-  "repository": "git@github.com:sugarshin/module-skeleton.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sugarshin/module-skeleton.git"
+  },
   "main": "index.js",
   "files": [
     "lib",
