@@ -135,7 +135,7 @@
     "compile": "coffee -c -o lib/ src/",
     "build-standalone": "browserify src/module-skeleton.coffee -t coffeeify -s ModuleSkeleton | derequire > build/module-skeleton.js",
     "build-min": "uglifyjs build/module-skeleton.js -m -c warnings=false --comments '/\\/*!/' -o build/module-skeleton.min.js",
-    "build": "npm run compile && npm run build-standalone && npm run build-min"
+    "build": "npm run lint && npm run compile && npm run build-standalone && npm run build-min"
   },
   "engines": {
     "node": "0.12.x"
