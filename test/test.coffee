@@ -6,7 +6,7 @@ global.navigator = window.navigator
 assert = require 'power-assert'
 deps = require 'deps'
 
-ModuleName = require '../src/module-name.coffee'
+ModuleName = require '../'
 
 # .test()
 describe '.test()', ->
